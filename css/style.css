@@ -69,11 +69,6 @@ body {
     animation: fade-in 0.7s ease both;
 }
 
-
-/* =========================================
-   5. EXPERIMENTAL HEADING
-========================================= */
-
 .intro-heading {
     font-family: Georgia, "Times New Roman", serif;
 
@@ -1130,5 +1125,27 @@ html {
 @media (prefers-reduced-motion: reduce) {
     .contact-email-link span {
         transition: none;
+    }
+}
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 18px 30px;
+    margin-top: 35px;
+}
+
+.contact-actions .contact-email-link {
+    margin-top: 0;
+}
+
+.contact-email-link span {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .contact-actions {
+        flex-direction: column;
+        gap: 22px;
     }
 }
